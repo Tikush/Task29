@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
     
     private func configurelongPressGesture() {
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handelLongPress(_:)))
-        longPressGesture.minimumPressDuration = 2
+        longPressGesture.minimumPressDuration = 1
         self.imageFlower.isUserInteractionEnabled = true
         self.imageFlower.addGestureRecognizer(longPressGesture)
     }

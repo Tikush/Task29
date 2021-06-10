@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     private func configurelongPressGesture() {
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handelLongPress(_:)))
-        longPressGesture.minimumPressDuration = 3
+        longPressGesture.minimumPressDuration = 1
         self.longPressLabel.isUserInteractionEnabled = true
         self.longPressLabel.addGestureRecognizer(longPressGesture)
     }
